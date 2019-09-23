@@ -1,0 +1,44 @@
+body{
+	font-size:1.2em;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-image: url(back2.png);
+	background-size: 100%;
+}
+
+.personalInfo{
+	background-image: url(back3.png);
+	padding: 10px;
+}
+.mainContent{
+	background-image: url(back.png);
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	align-items:center;
+	width:1024px;
+	margin:auto;
+}
+.contentItem{
+	display: flex;
+	width: 80%;
+	border:#7c9699 solid 1px;
+	margin-top:20px;
+	flex-direction:column;
+	align-items:center;
+	background-color: #d2d8d9;
+}
+#show{
+	display: flex;
+	justify-content:center;
+	margin:auto;
+	padding:10px;
+}
+.personalInfo{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	align-items:center;
+	width:1024px;
+	margin:auto;
+	border:black solid 1px;
+}
