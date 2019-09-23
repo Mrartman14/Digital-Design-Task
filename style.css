@@ -19,6 +19,7 @@ body{
 	margin:auto;
 }
 .contentItem{
+	padding: 20px 0;
 	display: flex;
 	width: 80%;
 	border:#7c9699 solid 1px;
