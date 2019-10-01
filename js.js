@@ -8,11 +8,10 @@ $(document).ready(function(){
 	let profilePicture = document.createElement("img");
 	profilePicture.alt = "profilePicture";
 	personalInfo.append(profilePicture);
-
 	let showMore = document.getElementById("showMore");
 	let shownItems = 5;
 	let globalData;
-
+	console.log("newCommit");
 	showMore.addEventListener("click", function(event) {
 		shownItems += 5;
 		getContent(globalData);
