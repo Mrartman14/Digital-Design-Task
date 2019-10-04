@@ -8,174 +8,159 @@
 </head>
 
 <body>
-	<article>
+	<div class="mainContainer">
 
-		<div id = "task1">
+		<div class="list_menu">
+			<!-- + -->
 			<h2>Digital Design Task 1.1</h2>
-			<ul class = "listMenu">
-				<li class = "menuBar">Азу по-татарски</li>
-				<li class = "menuBar">Зразы</li>
-				<li class = "menuBar">Баранья грудинка, тушенная с картофелем</li>
-				<li class = "menuBar">Бефстроганов</li>
-				<li class = "menuBar">Бифштекс с яйцом</li>
+			<ul class="listMenu">
+				<li class="menuBar">Азу по-татарски</li>
+				<li class="menuBar">Зразы</li>
+				<li class="menuBar">Баранья грудинка, тушенная с картофелем</li>
+				<li class="menuBar">Бефстроганов</li>
+				<li class="menuBar">Бифштекс с яйцом</li>
 			</ul>
 		</div>
 
-		<div id = "task2">
+		<div class="registration_form">
 			<h2>Digital Design Task 1.2</h2>
-			<div class = "mainForm">
-				<div class = "registracia">
-				Регистрация
+			<div class="mainForm">
+				<div class="registration">
+					Регистрация
 				</div>
-				<form class = "registrationForm">
-					<div class = "inputBar" id = "mail">
-						<div class = "text">
-							E-mail
+				<form class="registrationForm" method="get" action="URL">
+					<div class="inputBar mail">
+						<div>
+							<label for="mailInput">E-mail</label>
 						</div>
-						<input type = "email" name = "mail" id = "mailInput">
+						<input type="email" name="email" id="mailInput">
 					</div>
 
-					<div class = "inputBar" id = "pass1">
-						<div class = "text">
-							Password
+					<div class="inputBar password">
+						<div>
+							<label for="passInput">Пароль</label>
 						</div>
-						<input type = "password" name = "pass1" id = "passInput">
+						<input type="password" name="pass1" id="passInput">
 					</div>
 
-					<div class = "inputBar" id = "pass2">
-						<div class = "text">
-							Password again
+					<div class="inputBar passwordRepeat">
+						<div>
+							<label for="passRepeatInput">Пароль ещё раз</label>
 						</div>
-						<input type = "password" name = "pass2" id = "passRepeatInput">
+						<input type="password" name="pass2" id="passRepeatInput">
 					</div>
-					
-					<input type = "submit" name = "submit" id = "submitInput">
+
+					<input type="submit" name="submit" id="submitInput">
 				</form>
 			</div>
 		</div>
 
-		<div id = "task3">
+		<div class="dropdown_menu">
 			<h2>Digital Design Task 1.3</h2>
 
-			<div class = "containerTask3">
-				<ul id = "point1" class = "point">
-					<li class = "firstLi"><a href = "" class = "firstStr1">Файл</a></li>
-					<div class = "shadowDiv1">
-						<li class = "hidden1" id = "hidd1"><a href="">Новый</a></li>
-						<li class = "hidden1" id = "hidd2"><a href="">Открыть</a></li>
-						<li class = "hidden1" id = "hidd3"><a href="">Сохранить</a></li>
-						<li class = "hidden1" id = "hidd4"><a href="">Закрыть</a></li>
+			<div class="containerTask3">
+				<ul id="point1" class="point">
+					<div class="firstLi">
+						<a href="" class="firstStr1">Файл</a>
+					</div>
+					<div class="shadowDiv1">
+						<li class="hidden1" id="hidd1"><a href="">Новый</a></li>
+						<li class="hidden1" id="hidd2"><a href="">Открыть</a></li>
+						<li class="hidden1" id="hidd3"><a href="">Сохранить</a></li>
+						<li class="hidden1" id="hidd4"><a href="">Закрыть</a></li>
 					</div>
 				</ul>
 
-				<ul id = "point2" class = "point">
-					<li class = "firstLi"><a href="" class = "firstStr2">Правка</a></li>
-					<div class = "shadowDiv2">
-						<li class = "hidden2"><a href="">Вырезать</a></li>
-						<li class = "hidden2"><a href="">Копировать</a></li>
-						<li class = "hidden2"><a href="">Вставить</a></li>
-						<li class = "hidden2"><a href="">Удалить</a></li>
+				<ul id="point2" class="point">
+					<div class="firstLi">
+						<a href="" class="firstStr2">Правка</a>
+					</div>
+					<div class="shadowDiv2">
+						<li class="hidden2"><a href="">Вырезать</a></li>
+						<li class="hidden2"><a href="">Копировать</a></li>
+						<li class="hidden2"><a href="">Вставить</a></li>
+						<li class="hidden2"><a href="">Удалить</a></li>
 					</div>
 				</ul>
 			</div>
 		</div>
 
-		<div id = "task4">
+		<div id="task4">
 			<h2>Digital Design Task 1.4</h2>
-			<div id = "pointBlockLeft">
-			</div>			
-
-			<div id = "pointBlock">
+			<div class="mainBlock">
 				Дистанции огромного размера
 			</div>
-
-			<div id = "pointBlockRight;">
-				</div>
 		</div>
 
-		<div id = "task5">
-			<h2 class = "h2Task5">Digital Design Task 1.5</h2>
-			<div class = "containerTask5">
-				<div class = "EKG5">ЭКГ-5</div>
-				<div class = "someForm">
-					ЭКГ-5 — карьерный гусеничный экскаватор с ковшом вместимостью 5м<sup>3</sup> — электрическая карьерная полноповоротная лопата на гусеничном ходу, предназначенная для выемки и погрузки в транспортные средства полезных ископаемых и вскрышных пород, в том числе тяжёлых скальных, предварительно разрыхленных взрывом, в угольной промышленности, а так же для выполнения больших объёмов земляных работ в промышленном строительстве.
-				</div>
+		<div id="task5">
+			<h2>Digital Design Task 1.5</h2>
+			<div class="textContainer">
+				<p>
+					ЭКГ-5 — карьерный гусеничный экскаватор с ковшом вместимостью 5м<sup>3</sup> — электрическая
+					карьерная полноповоротная лопата на гусеничном ходу, предназначенная для выемки и погрузки в
+					транспортные средства полезных ископаемых и вскрышных пород, в том числе тяжёлых скальных,
+					предварительно разрыхленных взрывом, в угольной промышленности, а так же для выполнения больших
+					объёмов земляных работ в промышленном строительстве.
+				</p>
 			</div>
 		</div>
 
-		<div id = "task6">
+		<div id="task6">
 			<h2>Digital Design Task 1.6</h2>
 			<h3>Анапест как композиционный анализ</h3>
-			<div class = "rhymes">
-				Рифма существенно осознаёт лирический дактиль, несмотря на отсутствие единого пунктуационного алгоритма. Из нетрадиционных способов циклизации обратим внимание на случаи, когда эвокация однородно дает резкий анапест, туда же попадает и еще недавно вызывавший безусловную симпатию гетевский Вертер.
+			<div class="rhymes">
+				<p>
+				Рифма существенно осознаёт лирический дактиль, несмотря на отсутствие единого пунктуационного алгоритма.
+				Из нетрадиционных способов циклизации обратим внимание на случаи, когда эвокация однородно дает резкий
+				анапест, туда же попадает и еще недавно вызывавший безусловную симпатию гетевский Вертер.
+				</p>
 			</div>
 
 		</div>
 
-		<h2 class = "h2Task7">Digital Design Task 1.7</h2>
-		<div id = "task7">
-			<div class = "containerTask7">
-				<div class="eqBar" id = "eqBar1">
-					<div class="simpleBar firstBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar lastBar"></div>
+		<h2 class="h2Task7">Digital Design Task 1.7</h2>
+		<div id="task7">
+			<div class="containerTask7">
+				<div class="eqBar" id="eqBar1">
 				</div>
-				<div class="eqBar" id = "eqBar2">
-					<div class="simpleBar firstBar"></div>
-					<div class="simpleBar lastBar"></div>
+				<div class="eqBar" id="eqBar2">
 				</div>
-				<div class="eqBar" id = "eqBar3">
-					<div class="simpleBar firstBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar lastBar"></div>
+				<div class="eqBar" id="eqBar3">
 				</div>
-				<div class="eqBar" id = "eqBar4">
-					<div class="simpleBar firstBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar lastBar"></div>
+				<div class="eqBar" id="eqBar4">
 				</div>
-				<div class="eqBar" id = "eqBar5">
-					<div class="simpleBar firstBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar lastBar"></div>
+				<div class="eqBar" id="eqBar5">	
 				</div>
-				<div class="eqBar" id = "eqBar6">
-					<div class="simpleBar firstBar"></div>
-					<div class="simpleBar"></div>
-					<div class="simpleBar lastBar"></div>
+				<div class="eqBar" id="eqBar6">
 				</div>
 			</div>
 		</div>
 
 		<div id="task8">
 			<div class="containerTask8">
-				<h2 class = "h2Task8">Digital Design Task 1.8</h2>
-				<div class="mainString">
-					<div class="step" id = "step1">Шаг 1</div>
-					<div class="step" id = "step2">Шаг 2</div>
-					<div class="step" id = "step3">Шаг 3</div>
-					<div class="step" id = "step4">Шаг 4</div>
+				<h2>Digital Design Task 1.8</h2>
+				<div class="stepContainer">
+					<label class="wrapper">
+						<input type="radio" name="radio" class="step" checked>
+						<span class="stepWrapper" id="firstStepWrapper">Шаг 1</span>
+					</label>
+					<label class="wrapper">
+						<input type="radio" name="radio" class="step">
+						<span class="stepWrapper" id="secondStepWrapper">Шаг 2</span>
+					</label>
+					<label class="wrapper">
+						<input type="radio" name="radio" class="step">
+						<span class="stepWrapper" id="thirdStepWrapper">Шаг 3</span>
+					</label>
+					<label class="wrapper">
+						<input type="radio" name="radio" class="step">
+						<span class="stepWrapper" id="fourthStepWrapper">Шаг 4</span>
+					</label>
 				</div>
 			</div>
 		</div>
 
-	</article>
+	</div>
 
 </body>
 
