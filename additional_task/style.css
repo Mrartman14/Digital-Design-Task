@@ -235,30 +235,42 @@ h2{
 	margin: auto;
 	position: relative;
 	width: 300px;
-	height: 160px;
 	border-radius: 0 0 8px 8px;
 	font-size: 0.75em;
 }
-.textContainer:before{
-	content: "";
-	position: absolute;
-	top:-19%;
-	left:20%;
-	width: 80%;
-	height: 20%;
-	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-}
-.textContainer:after{
-	content:"ЭКГ-5";
+.textContainer h3{
+	display:inline-block;
+	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	padding:5px 25px 4px 10px;
+	font-weight: normal;
+	padding: 5px 25px 4px 10px;
 	font-size: 1.4em;
-	color:#f5ae6e;
+	color: #f5ae6e;
 	position: absolute;
 	top: -20%;
 	left: 0;
 }
-.textContainer, .textContainer:before{
+.textContainer:before{
+	content: "";
+	position: absolute;
+	top: -19%;
+	left: 25%;
+	width: 72%;
+	height: 29px;
+	transform: skew(-30deg, 0);
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.textContainer:after{
+	content: "";
+	position: absolute;
+	top: -19%;
+	left: 90%;
+	height: 29px;
+	width: 10%;
+	box-sizing: border-box;
+}
+.textContainer, .textContainer:before, .textContainer:after{
 	background-image: linear-gradient(180deg, #fff,rgb(190, 190, 190));
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -275,7 +287,7 @@ h2{
 	position: relative;
 	width: 400px;
 }
-h3{
+#task6 h3{
 	background-color: #008b68;
 	color:#fff;
 	padding: 10px;
@@ -318,23 +330,35 @@ h3{
 	background: repeating-linear-gradient(to top, transparent, transparent 20px,#333333 20px,#333333 22px), linear-gradient(0deg, #d68333,#fcd266);
 	border-radius: 6px 6px 0 0;
 }
-#eqBar1{
-	height: 108px;
+.one{
+	height: 20px;
 }
-#eqBar2{
+.two{
 	height: 42px;
 }
-#eqBar3{
-	height: 174px;
+.three{
+	height: 64px;
 }
-#eqBar4{
-	height: 218px;
+.four{
+	height: 86px;
 }
-#eqBar5{
+.five{
 	height: 108px;
 }
-#eqBar6{
-	height: 64px;
+.six{
+	height: 130px;
+}
+.seven{
+	height: 152px;
+}
+.eight{
+	height: 174px;
+}
+.nine{
+	height: 196px;
+}
+.ten{
+	height: 218px;
 }
 /*-----------------------------------------------------------------------*/
 #task8{
@@ -383,14 +407,3 @@ h3{
 	position: absolute;
 	left: 314px;
 }
-
-
-
-
-
-
-
-
-
-
-/*нормальные имена классов, прекратить использовать id, название файла не add task, а index/mainIndex */
