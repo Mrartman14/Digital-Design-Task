@@ -1,0 +1,203 @@
+/*----------------------------MOBILE-------------------------*/
+@media(max-width: 800px){
+    body{
+        width: 95%;
+    }
+    /*----------HEADER------------*/
+    nav{
+        flex-direction: column;
+        align-items: stretch;
+        height: 250px;
+    }
+    nav div{
+        border-bottom: 1px solid rgb(190, 190, 190);
+        box-sizing: border-box;
+        flex: 5;
+    }
+    nav .emptyDiv{
+        flex: 1;
+        background: none;
+    }
+    nav > :first-child, nav > :last-child{
+        border-bottom: none;
+    }
+    nav a{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    /*---------SECTION-----------*/
+    section{
+        flex-direction: column;
+    }
+    .firstSection, .secondSection, .firstSubSection, .secondSubSection, .subSubSec1, .subSubSec2{
+        flex-direction: column;
+    }
+    .shadowBox{
+        box-shadow: 0px 10px 20px -5px;
+    }
+    article{
+        margin: 10px 0;
+    }
+}
+
+
+/*----------------------------TABLET--------------------------*/
+@media(min-width: 800px){
+    body{
+        width: 95%;
+        height: 100%;
+        font-size: 0.7em;
+    }
+    nav{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav div{
+        flex: 1;
+        margin: 0 5px;
+    }
+    nav .emptyDiv{
+        flex: 5;
+        background-color: #8ad1a9;
+    }
+    nav a{
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .home{
+        order: 1;
+        margin-left: 0;
+    }
+    .contacts{
+        order: 2;
+    }
+    .about_me{
+        order: 3;
+    }
+    .partners{
+        order: 4;
+    }
+    .emptyDiv{
+        order: 5;
+    }
+    .sign_in{
+        order: 6;
+        margin-right: 0;
+    }
+    /*---------SECTION----------*/
+    section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .firstSection, .secondSection{
+        flex-direction: column;
+        width: calc(50% - 10px);
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    section > :first-child{
+        margin-right: 10px;
+    }
+    section > :last-child{
+        margin-left: 10px;
+    }
+    article .post{
+        justify-content: space-between;
+        flex: 1;
+    }
+
+
+    .firstSection article{
+        margin-top: 20px;
+        flex: 1;
+    }
+    .firstSection > :first-child{
+        margin-top: 0;
+    }
+    .firstSubSection{
+        flex-direction: column;
+    }
+    .secondSubSection{
+        flex-direction: row;
+    }
+    .subSubSec1{
+        width: 50%;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .subSubSec2{
+        flex-direction: column;
+        width: 50%;
+    }
+    .subSubSec1 article, .subSubSec2 article{
+        margin-top: 20px;
+    }
+    .secondSubSection > :first-child{
+        margin-right: 10px;
+    }
+    .secondSubSection > :last-child{
+        margin-left: 10px;
+    }
+}
+
+/*----------------------------------------DESKOP----------------------------------*/
+@media(min-width: 1000px){
+    body{
+        max-width: 1200px;
+        font-size: 0.9em;
+    }
+
+    nav .emptyDiv{
+        flex: 7;
+    }
+    /*---------SECTION----------*/
+    .firstSection{
+        flex-direction: column;
+        width: calc(25% - 10px);
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .secondSection{
+        flex-direction: column;
+        width: calc(75% - 10px);
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .secondSection > div{
+        flex: 1;
+    }
+    section > :first-child{
+        margin-right: 10px;
+    }
+    section > :last-child{
+        margin-left: 10px;
+    }
+    .subSubSec1{
+        width: 65%;
+    }
+    .subSubSec2{
+        width: 35%;
+    }
+    .firstSubSection > article{
+        flex-direction: row;
+        align-items: stretch;
+        flex: 1;
+    }
+    .firstSubSection .image{
+        order: 2;
+        flex: 9;
+    }
+    .firstSubSection .post{
+        order: 1;
+        flex: 10;
+    }
+    .subSubSec1 article > div{
+        flex: 1;
+    }
+    .secondSubSection .post{
+        justify-content: space-between;
+    }
+}
