@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+}
+.col{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.jc-sp-bet{
+    justify-content: space-between;
+}
+.jc-cen{
+    justify-content: center;
+}

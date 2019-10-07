@@ -14,7 +14,7 @@
         box-sizing: border-box;
         flex: 5;
     }
-    nav .emptyDiv{
+    nav .search-string{
         flex: 1;
         background: none;
     }
@@ -22,33 +22,31 @@
         border-bottom: none;
     }
     nav a{
-        display: flex;
         align-items: center;
         padding-left: 20px;
     }
-    /*---------SECTION-----------*/
-    section{
+    /*---------MAIN-----------*/
+    main{
         flex-direction: column;
     }
-    .firstSection, .secondSection, .firstSubSection, .secondSubSection, .subSubSec1, .subSubSec2{
+    .post-sub-section, .post-sub-container{
         flex-direction: column;
     }
-    .shadowBox{
+    .shadow-box{
         box-shadow: 0px 10px 20px -5px;
     }
-    article{
+    .post{
         margin: 10px 0;
     }
 }
-
-
 /*----------------------------TABLET--------------------------*/
 @media(min-width: 800px){
     body{
         width: 95%;
         height: 100%;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
+    /*----------HEADER------------*/
     nav{
         flex-direction: row;
         width: 100%;
@@ -58,13 +56,12 @@
         flex: 1;
         margin: 0 5px;
     }
-    nav .emptyDiv{
+    nav .search-string{
         flex: 5;
         background-color: #8ad1a9;
     }
     nav a{
         padding: 10px 0;
-        display: flex;
         justify-content: center;
     }
     .home{
@@ -74,71 +71,76 @@
     .contacts{
         order: 2;
     }
-    .about_me{
+    .about-me{
         order: 3;
     }
     .partners{
         order: 4;
     }
-    .emptyDiv{
+    .search-string{
         order: 5;
     }
-    .sign_in{
+    .sign-in{
         order: 6;
         margin-right: 0;
     }
     /*---------SECTION----------*/
-    section{
+    main{
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .firstSection, .secondSection{
-        flex-direction: column;
+    .post-box, .post-container{
         width: calc(50% - 10px);
         margin-top: 30px;
         justify-content: space-between;
     }
-    section > :first-child{
+    .post-container > div{
+        flex: 1;
+    }
+    main > :first-child{
         margin-right: 10px;
     }
-    section > :last-child{
+    main > :last-child{
         margin-left: 10px;
     }
-    article .post{
+    .post-content{
         justify-content: space-between;
         flex: 1;
     }
-
-
-    .firstSection article{
+    .post-box .post{
         margin-top: 20px;
         flex: 1;
     }
-    .firstSection > :first-child{
+    .post-box > :first-child{
         margin-top: 0;
     }
-    .firstSubSection{
-        flex-direction: column;
+    .post-container > div{
+        margin-top: 20px;
     }
-    .secondSubSection{
+    .post-container > :first-child{
+        margin-top: 0;
+    }
+    .post-sub-container{
         flex-direction: row;
     }
-    .subSubSec1{
+    .post-sub-div{
         width: 50%;
         flex-direction: row;
         align-items: stretch;
     }
-    .subSubSec2{
-        flex-direction: column;
+    .content-sub-div{
         width: 50%;
     }
-    .subSubSec1 article, .subSubSec2 article{
+    .post-sub-div .post, .content-sub-div .post{
         margin-top: 20px;
     }
-    .secondSubSection > :first-child{
+    .post-sub-div > :first-child, .content-sub-div > :first-child{
+        margin-top: 0;
+    }
+    .post-sub-container > :first-child{
         margin-right: 10px;
     }
-    .secondSubSection > :last-child{
+    .post-sub-container > :last-child{
         margin-left: 10px;
     }
 }
@@ -147,57 +149,55 @@
 @media(min-width: 1000px){
     body{
         max-width: 1200px;
-        font-size: 0.9em;
+        font-size: 1em;
     }
-
-    nav .emptyDiv{
+    /*----------HEADER------------*/
+    .search-string{
         flex: 7;
     }
-    /*---------SECTION----------*/
-    .firstSection{
-        flex-direction: column;
+    /*-----------MAIN-------------*/
+    .post-box{
         width: calc(25% - 10px);
         margin-top: 30px;
         justify-content: space-between;
     }
-    .secondSection{
-        flex-direction: column;
+    .post-container{
         width: calc(75% - 10px);
         margin-top: 30px;
         justify-content: space-between;
     }
-    .secondSection > div{
+    .post-container > div{
         flex: 1;
     }
-    section > :first-child{
+    main > :first-child{
         margin-right: 10px;
     }
-    section > :last-child{
+    main > :last-child{
         margin-left: 10px;
     }
-    .subSubSec1{
-        width: 65%;
+    .post-sub-div{
+        flex: 2;
     }
-    .subSubSec2{
-        width: 35%;
+    .content-sub-div{
+        flex: 1;
     }
-    .firstSubSection > article{
+    .post-sub-section > .post{
         flex-direction: row;
         align-items: stretch;
         flex: 1;
     }
-    .firstSubSection .image{
+    .post-sub-section .image-wrapper{
         order: 2;
         flex: 9;
     }
-    .firstSubSection .post{
+    .post-sub-section .post-content{
         order: 1;
         flex: 10;
     }
-    .subSubSec1 article > div{
+    .post-sub-div .post > div{
         flex: 1;
     }
-    .secondSubSection .post{
+    .post-sub-container .post-content{
         justify-content: space-between;
     }
 }

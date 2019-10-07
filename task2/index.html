@@ -4,125 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="Class helper.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="media.css">
 	<title>task 2</title>
 </head>
 
 <body>
-    <header>
+    <header class="col jc-cen">
         <h1>Flexbox Layout</h1>
         <nav>
-            <div class="sign_in"><a href="">Sign in</a></div>
-            <div class="emptyDiv"> </div>
+            <div class="sign-in"><a href="">Sign in</a></div>
+            <div class="search-string">
+                <input type="text" class="search flex">
+            </div>
             <div class="home"><a href="">Home</a></div>
             <div class="contacts"><a href="">Contacts</a></div>
-            <div class="about_me"><a href="">About me</a></div>
+            <div class="about-me"><a href="">About me</a></div>
             <div class="partners"><a href="">Partners</a></div>
         </nav>
     </header>
 
-    <section>
-        <div class="firstSection">
-            <article class="shadowBox">
-                <div class="image">
-                    <img src="IMG1.jpg">
+    <main class="flex">
+        <section class="post-box col">
+            <div class="post shadow-box">
+                <div class="image-wrapper">
+                    <img src="IMG1.jpg" alt="Post picture" class="image flex">
                 </div>
-                <div class="post">
-                    <div class="postText">
-                        <h2>Hello World</h2>
+                <div class="post-content">
+                    <div class="post-text">
+                        <h2><a href="">Hello World</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div class="postInfo">
-                        <div class="postAuthor">
-                            By Joe Smith
+                    <div class="post-info">
+                        <div class="post-author">
+                            <a href="">By Joe Smith</a>
                         </div>
-                        <div class="numberOfComments">
-                            42 comments
+                        <div class="number-of-comments">
+                            <a href="">42 comments</a>
                         </div>
                     </div>
                 </div>
-            </article>
-
-            <article>
-                <div class="image">
+            </div>
+    
+            <div class="post">
+                <div class="image-wrapper">
                 </div>
-                <div class="post">
-                    <div class="postText">
-                        <h2>Hello World</h2>
+                <div class="post-content">
+                    <div class="post-text">
+                        <h2><a href="">Hello World</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         </p>
                     </div>
-                    <div class="postInfo">
-                        <div class="postAuthor">
-                            By Joe Smith
+                    <div class="post-info">
+                        <div class="post-author">
+                            <a href="">By Joe Smith</a>
                         </div>
-                        <div class="numberOfComments">
-                            42 comments
+                        <div class="number-of-comments">
+                            <a href="">42 comments</a>
                         </div>
                     </div>
                 </div>
-            </article>
-
-            <article>
-                <div class="image">
+            </div>
+    
+            <div class="post">
+                <div class="image-wrapper">
                 </div>
-                <div class="post">
-                    <div class="postText">
-                        <h2>Hello World</h2>
+                <div class="post-content">
+                    <div class="post-text">
+                        <h2><a href="">Hello World</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div class="postInfo">
-                        <div class="postAuthor">
-                            By Joe Smith
+                    <div class="post-info">
+                        <div class="post-author">
+                            <a href="">By Joe Smith</a>
                         </div>
-                        <div class="numberOfComments">
-                            42 comments
+                        <div class="number-of-comments">
+                            <a href="">42 comments</a>
                         </div>
                     </div>
                 </div>
-            </article>
-
-            <article>
-                <div class="image">
+            </div>
+    
+            <div class="post">
+                <div class="image-wrapper">
                 </div>
-                <div class="post">
-                    <div class="postText">
-                        <h2>Hello World</h2>
+                <div class="post-content">
+                    <div class="post-text">
+                        <h2><a href="">Hello World</a></h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div class="postInfo">
-                        <div class="postAuthor">
-                            By Joe Smith
+                    <div class="post-info">
+                        <div class="post-author">
+                            <a href="">By Joe Smith</a>
                         </div>
-                        <div class="numberOfComments">
-                            42 comments
+                        <div class="number-of-comments">
+                            <a href="">42 comments</a>
                         </div>
                     </div>
                 </div>
-            </article>
-        </div>    
+            </div>
+        </section> 
 
-        <div class="secondSection">
-            <div class="firstSubSection">
-                <article class="shadowBox">
-                    <div class="image">
-                        <img src="IMG2.jpg">
+        <section class="post-container col">
+            <div class="post-sub-section col">
+                <div class="post shadow-box">
+                    <div class="image-wrapper">
+                        <img src="IMG2.jpg" alt="Post picture" class="image flex">
                     </div>
-                    <div class="post">
-                        <div class="postText">
-                            <h2>Hello World</h2>
+                    <div class="post-content">
+                        <div class="post-text">
+                            <h2><a href="">Hello World</a></h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -130,27 +134,27 @@
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
-                        <div class="postInfo">
-                            <div class="postAuthor">
-                                By Joe Smith
+                        <div class="post-info">
+                            <div class="post-author">
+                                <a href="">By Joe Smith</a>
                             </div>
-                            <div class="numberOfComments">
-                                42 comments
+                            <div class="number-of-comments">
+                                <a href="">42 comments</a>
                             </div>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
 
-            <div class="secondSubSection">
-                <div class="subSubSec1">
-                    <article>
-                        <div class="image">
-                            <img src="IMG3.jpg">
+            <div class="post-sub-container">
+                <div class="post-sub-div col">
+                    <div class="post">
+                        <div class="image-wrapper">
+                            <img src="IMG3.jpg" alt="Post picture" class="image flex">
                         </div>
-                        <div class="post">
-                            <div class="postText">
-                                <h2>Hello World</h2>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <h2><a href="">Hello World</a></h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -160,89 +164,89 @@
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
                             </div>
-                            <div class="postInfo">
-                                <div class="postAuthor">
-                                    By Joe Smith
+                            <div class="post-info">
+                                <div class="post-author">
+                                    <a href="">By Joe Smith</a>
                                 </div>
-                                <div class="numberOfComments">
-                                    42 comments
+                                <div class="number-of-comments">
+                                    <a href="">42 comments</a>
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
 
-                <div class="subSubSec2">
-                    <article class="shadowBox">
-                        <div class="image">
-                            <img src="IMG4.jpg">
+                <div class="content-sub-div col">
+                    <div class="post shadow-box">
+                        <div class="image-wrapper">
+                            <img src="IMG4.jpg" alt="Post picture" class="image flex">
                         </div>
-                        <div class="post">
-                            <div class="postText">
-                                <h2>Hello World</h2>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <h2><a href="">Hello World</a></h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </p>
                             </div>
-                            <div class="postInfo">
-                                <div class="postAuthor">
-                                    By Joe Smith
+                            <div class="post-info">
+                                <div class="post-author">
+                                    <a href="">By Joe Smith</a>
                                 </div>
-                                <div class="numberOfComments">
-                                    42 comments
+                                <div class="number-of-comments">
+                                    <a href="">42 comments</a>
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article>
-                        <div class="image">
+                    <div class="post">
+                        <div class="image-wrapper">
                         </div>
-                        <div class="post">
-                            <div class="postText">
-                                <h2>Hello World</h2>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <h2><a href="">Hello World</a></h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </p>
                             </div>
-                            <div class="postInfo">
-                                <div class="postAuthor">
-                                    By Joe Smith
+                            <div class="post-info">
+                                <div class="post-author">
+                                    <a href="">By Joe Smith</a>
                                 </div>
-                                <div class="numberOfComments">
-                                    42 comments
+                                <div class="number-of-comments">
+                                    <a href="">42 comments</a>
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article>
-                        <div class="image">
+                    <div class="post">
+                        <div class="image-wrapper">
                         </div>
-                        <div class="post">
-                            <div class="postText">
-                                <h2>Hello World</h2>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <h2><a href="">Hello World</a></h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </p>
                             </div>
-                            <div class="postInfo">
-                                <div class="postAuthor">
-                                    By Joe Smith
+                            <div class="post-info">
+                                <div class="post-author">
+                                    <a href="">By Joe Smith</a>
                                 </div>
-                                <div class="numberOfComments">
-                                    42 comments
+                                <div class="number-of-comments">
+                                    <a href="">42 comments</a>
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>    
-        </div>
-
-    </section>
+            </div>
+        </section>
+       
+    </main>
 
     <footer>
-
     </footer>
 
 </body>
