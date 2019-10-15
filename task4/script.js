@@ -7,6 +7,7 @@ for (let colNum = 0; colNum < 7; colNum++) {
 	console.log(string);
 }
 //---------------------------------2---------------------------------//
+//----------first-try-------//
 let columns = 8;
 for (let i = 0; i < columns; i++) {
 	let string = "";
@@ -27,7 +28,27 @@ for (let i = 0; i < columns; i++) {
 			}
 		}
 	}
-	console.log(string);
+	//console.log(string);
+}
+//----------second-try-------//
+for (let col = 0; col < columns; col++) {
+	let str = "";
+	for (let row = 0; row < columns/2; row++) {
+		if (col % 2 == 0) {
+			str += "# ";
+		}else str +=" #";
+	}
+	//console.log(str);
+}
+//----------third-try-------//
+for (let col = 0; col < columns; col++) {
+	let str = "";
+	for (let row = 0; row < columns; row++) {
+		if(col % 2 == row % 2){
+			str += " ";
+		}else str += "#";
+	}
+	console.log(str);
 }
 
 //---------------------------------3---------------------------------//
