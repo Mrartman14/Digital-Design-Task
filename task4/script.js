@@ -1,33 +1,33 @@
 //---------------------------------1---------------------------------//
-for (let i = 0; i < 7; i++) {
-	let str = "";
-	for (let a = 0; a <= i; a++) {
-		str += "#";
+for (let colNum = 0; colNum < 7; colNum++) {
+	let string = "";
+	for (let row = 0; row <= colNum; row++) {
+		string += "#";
 	}
-	console.log(str);
+	console.log(string);
 }
 //---------------------------------2---------------------------------//
-let colNum = 8;
-for (let i = 0; i < colNum; i++) {
-	let str = "";
+let columns = 8;
+for (let i = 0; i < columns; i++) {
+	let string = "";
 	if (i % 2 == 0) {
-		for (let a = 0; a < colNum; a++) {
+		for (let a = 0; a < columns; a++) {
 			if (a % 2 == 0) {
-				str += "#";
+				string += "#";
 			} else {
-				str += " ";
+				string += " ";
 			}
 		}
 	} else {
-		for (let a = 0; a < colNum; a++) {
+		for (let a = 0; a < columns; a++) {
 			if (a % 2 == 0) {
-				str += " ";
+				string += " ";
 			} else {
-				str += "#";
+				string += "#";
 			}
 		}
 	}
-	console.log(str);
+	console.log(string);
 }
 
 //---------------------------------3---------------------------------//
@@ -40,15 +40,15 @@ console.log(min(0, 10));
 console.log(min(0, -10));
 
 //---------------------------------4---------------------------------//
-function range(a, b, step = 1) {
+function range(start, end, step = 1) {
 	let rangeArray = [];
-	if (b - a < 0) {
-		for (let i = 0; i * Math.abs(step) < -(b - a) + 1; i++) {
-			rangeArray[i] = a - i * Math.abs(step);
+	if (end - start < 0) {
+		for (let i = 0; i * Math.abs(step) < -(end - start) + 1; i++) {
+			rangeArray[i] = start - i * Math.abs(step);
 		}
 	} else {
-		for (let i = 0; i * Math.abs(step) < (b - a) + 1; i++) {
-			rangeArray[i] = a + i * Math.abs(step);
+		for (let i = 0; i * Math.abs(step) < (end - start) + 1; i++) {
+			rangeArray[i] = start + i * Math.abs(step);
 		}
 	}
 	return rangeArray;
@@ -98,15 +98,15 @@ let result = arrays.reduce((sum, current) => {
 console.log(result);
 
 //---------------------------------7---------------------------------//
-function deepEqual(a, b) {
-	if (typeof a === "object" && typeof b === "object" && a !== null && b !== null) {
-		let aValues = Object.values(a);
-		let bValues = Object.values(b);
+function deepEqual(firstValue, secondValue) {
+	if (typeof firstValue === "object" && typeof secondValue === "object" && firstValue !== null && secondValue !== null) {
+		let aValues = Object.values(firstValue);
+		let bValues = Object.values(secondValue);
 		if (aValues.toString() === bValues.toString()) {
 			return true;
 		} else return false;
 	} else {
-		if (a === b) {
+		if (firstValue === secondValue) {
 			return true;
 		} else return false;
 	}
