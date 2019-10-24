@@ -1,0 +1,16 @@
+body{
+    background-color: #eeeeee;
+}
+* {
+    transition: width, opacity;
+    transition-duration: 0.5s;
+}
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+input:focus {
+    outline: none;
+}
